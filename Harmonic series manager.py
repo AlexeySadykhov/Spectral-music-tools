@@ -5,6 +5,7 @@ num_of_ovtns = int(input('Enter number of overtones:'))
 low = float(input('Enter low border frequency:'))
 high = float(input('Enter high border frequency:'))
 num_of_freqs = int(input('Enter number of frequencies to generate:'))
+
 data = [ ]
 for x in range(num_of_ovtns):
     data.append(f*x)
