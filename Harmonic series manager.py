@@ -7,7 +7,7 @@ high = float(input('Enter high border frequency:'))
 num_of_freqs = int(input('Enter number of frequencies to generate:'))
 
 data = [ ]
-for x in range(num_of_ovtns):
+for x in range(1, (num_of_ovtns+1)):
     data.append(f*x)
 
 file = open('spectrum.txt', 'w')
