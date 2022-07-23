@@ -1,5 +1,6 @@
 # Spectral-music-tools
 Scripts for spectral music composition.
+
 "FFT from wav" script analyzes input wav-file, does FFT and shows its spectrum.
 The main idea is to parse frequencies which amplitude is higher then the given one, convert them to midicents and to write into the text-file.
 
