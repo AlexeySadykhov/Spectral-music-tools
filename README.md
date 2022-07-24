@@ -9,4 +9,4 @@ User can manage different parameters: number of overtones to generate, low and h
 
 "Random chords from single spectrum" is similar to "Harmonic series manager", but it automatically creates chords from these random spectral partials.
 
-"FM-spectral generator" is the most powerful one. Using this script you can transform into music score the whole process of frequency modulation synthesis. The task of the script is to create a spectral chord sequence. It can be achieved if we will use just three lists: list of career frequencies, list of modulator frequencies and a list of a gain. User can just type theese values to console and he will easily get a result in a text file.
+"FM-spectral generator" is the most powerful one. Using this script you can transform into music score the whole process of frequency modulation synthesis. The task of the script is to create a spectral chord sequence. It can be achieved if we will use just three lists: list of career frequencies, list of modulator frequencies and a list of a gain. User can just type these values to console and he will easily get a result in a text file.
