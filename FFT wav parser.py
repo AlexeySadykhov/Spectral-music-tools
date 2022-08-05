@@ -3,6 +3,7 @@ import scipy.io.wavfile as wavfile
 import scipy.fftpack as fftpk
 from matplotlib import pyplot as plt
 
+
 in_filename = input('Enter wav-file name to do FFT:')
 s_rate, signal = wavfile.read(in_filename)
 FFT = abs(fftpk.fft(signal))
@@ -19,10 +20,6 @@ def f_to_mc(f):
     return int(d*100)
 
 
-quant_step = int(input('Enter mc quantize step:'))
-scale = [x for x in range(1548, 13508, quant_step)]
-
-
 def nearest_value(lst, value):
     found = lst[0]
     for item in lst:
@@ -31,9 +28,11 @@ def nearest_value(lst, value):
     return found
 
 
+quant_step = int(input('Enter mc quantize step:'))
+scale = [x for x in range(1548, 13508, quant_step)]
 low_amp = complex(input('Enter low amplitude border to parse:'))
-result = set()
 
+result = set()
 for x, y in zip(freqs[range(len(FFT)//2)],
                 FFT[range(len(FFT)//2)]):
     if y >= low_amp:
