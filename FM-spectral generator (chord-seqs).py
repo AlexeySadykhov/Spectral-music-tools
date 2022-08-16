@@ -26,7 +26,7 @@ def parse_to_lisp(lst):
 
 data = [create_spectrum(c_line[i], m_line[i], g_line[i]) for i in range(len(c_line))]
 filename = input('Enter file name to save:')
-file = open(filename + '.txt', 'w')
+file = open(f"{filename}.txt", "w")
 file.write(parse_to_lisp(data))
 file.close()
 print('Done')
