@@ -42,7 +42,7 @@ for x, y in zip(freqs[range(len(FFT)//2)],
 
 out_file = open('spectrum_out.txt', 'w')
 for item in result:
-    out_file.write(str(item)+'\n')
+    out_file.write(f"{str(item)}\n")
 out_file.close()
 
 print('Ready')
