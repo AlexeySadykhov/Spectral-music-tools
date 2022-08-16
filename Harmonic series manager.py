@@ -29,9 +29,9 @@ def random_variation(s, l, h, q):
 
 
 def write_to_file(data, file_name):
-    file = open(file_name + '.txt', 'w')
+    file = open(f"{file_name}.txt", "w")
     for item in data:
-        file.write(str(item) + '\n')
+        file.write(f"{str(item)}\n")
     file.close()
 
 
