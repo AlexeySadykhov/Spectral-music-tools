@@ -1,9 +1,11 @@
+import sys
+
 c_line = list(map(float, input('Enter career line frequencies:').split()))
 m_line = list(map(float, input('Enter modulator line frequencies:').split()))
 g_line = list(map(int, input('Enter fm level line values:').split()))
 if not len(c_line) == len(m_line) == len(g_line):
     print("Error. Lists' length must be the same.")
-    exit(1)
+    sys.exit(1)
 
 
 def create_spectrum(c, m, gain):
