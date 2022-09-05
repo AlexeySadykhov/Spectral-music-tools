@@ -1,6 +1,5 @@
 import random
 
-
 freq = float(input('Enter fundamental frequency:'))
 num_of_ovtns = int(input('Enter number of overtones in spectrum:'))
 low_border = float(input('Enter low border frequency:'))
